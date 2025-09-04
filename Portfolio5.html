@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsha | Passionate Developer</title>
+
+  <style>
+    /* Reset and Base */
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #c8c5c5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+
+      /* background: linear-gradient(to right, #1f4037, #99f2c8);*/
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 70%;
+      border: 3px solid white;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4CAF50;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+      font-size: 2em;
+      border-bottom: 2px solid #eee;
+      display: inline-block;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #eee;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .projects .project {
+      background: rgb(232, 230, 230);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .projects .project:hover {
+      transform: scale(1.02);
+    }
+
+    .experience p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #ccc;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <header>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_XHyiLhqsdffX884YATekKArx1iWxm6j7SA&s"
+      alt="Harsha Profile">
+    <h1>Harsha</h1>
+    <p>Passionate Frontend Developer | Experienced Problem Solver</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Harsha</strong>, a passionate and experienced web developer who loves turning ideas into
+      interactive, functional, and visually appealing websites. I specialize in front-end technologies and love creating
+      great user experiences.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+      <li>Figma</li>
+      <li>Tailwind CSS</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>My Portfolio</h3>
+      <p>A sleek and responsive portfolio to showcase my work, skills, and experience.</p>
+      <a href="https://github.com/harsha/portfolio" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Displays real-time weather data using OpenWeatherMap API with clean UI.</p>
+      <a href="https://github.com/harsha/weather-app" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Task Manager</h3>
+      <p>Built with JavaScript to help users manage their daily tasks effectively.</p>
+      <a href="https://github.com/harsha/todo-app" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <p><strong>Frontend Developer</strong> — Freelance (2022 - Present)</p>
+    <p>Developed responsive websites and UI components for clients using HTML, CSS, and JavaScript. Worked closely with
+      designers and backend developers.</p>
+
+    <p><strong>Web Development Intern</strong> — Tech Solutions Inc. (2021 - 2022)</p>
+    <p>Assisted in building internal tools and dashboards. Learned Agile development and version control with Git.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:harsha@example.com">harsha@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/harsha3" target="_blank">github.com/harsha</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/harsha3" target="_blank">linkedin.com/in/harsha</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harsha. Built with ❤️ and HTML + CSS.</p>
+  </footer>
+
+  
+
+</body>
+
+</html>
